@@ -36,7 +36,7 @@ NICs=$(cat /proc/net/dev | awk {'print $1'} | grep -Ev "^lo|^face|^Inter|^$" | c
 
 # Khai bao IP PREFIX GATEWAY
 NIC1="192.168.100.145 24 192.168.100.1"
-NIC0="172.16.1.101 24 172.16.2.254"
+NIC0="172.16.1.101 24 172.16.1.254"
 i=0
 for x in $NICs
 do
