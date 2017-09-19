@@ -1,13 +1,15 @@
 ## File kickstart cài đặt CentOS 7
 
-### Đã cấu hình:
+### Mục đích sử dụng:
 
 - Cài đặt IP tĩnh cho 2 card mạng
 	- Card PXE: 172.16.1.101
 	- Card LAN2: 192.168.100.145
 
-**Chú ý**: Card LAN2, không được cắm dây trước khi cài nếu dải đó có DHCP Server.
-
+	- **Chú ý**: 
+		- Card PXE phải ra được Internet để cài đặt Check_MK
+		- Card LAN2, không được cắm dây trước khi cài nếu dải đó có DHCP Server.
+		
 - Cài đặt Check_MK
 - Cài đặt LVM:
 	- Sử dụng ổ sda
