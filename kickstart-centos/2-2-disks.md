@@ -36,7 +36,7 @@ logvol swap  --fstype="swap" --size=2048 --name=lv-swap01 --vgname=vg-hoangdh
 ### Pre-script tự động detech ổ cứng (Không sử dụng cho SCSI)
 
 ```
-!/bin/bash
+#!/bin/bash
 #DISKs=$(ls /sys/block/*/device/* | grep block | grep -Ev "sr0|^$" | cut -d "/" -f4 | sort -u)
 
 DISKs=$(lsblk -D | awk {'print $1'} | grep -Ev "[0-9]$|-|^$|^NAME")
